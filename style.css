@@ -139,6 +139,8 @@ footer >  nav > ul > li a{
                     <div class="column">שורה 1 עמודה 3</div>                    
                 </div>
                 <div class="row" */
+
+                
  main{
    text-align: center;
  }
@@ -149,10 +151,7 @@ footer >  nav > ul > li a{
     max-width: 650px;*/
  }
 
- main > div > div.row
- {
- 
- }
+
 
  main > div > div.row > div.column
  {
@@ -160,4 +159,31 @@ footer >  nav > ul > li a{
     width: 250px;
     margin-right: 10px;
     margin-bottom: 10px;
+ }
+
+/* first row  */
+ main > div > div.row:first-child > div.column
+ {
+    width: 291px;
+    height: 354px;  
+   border-radius:0px 0px 15px 0px ;
+ }
+ main > div > div.row:first-child > div.column:first-child 
+ {  
+    background: url('images/1908364606615453350.JPG') no-repeat;
+ }
+ main > div > div.row:first-child > div.column:nth-child(2)
+ {  
+    background: url('images/Picture-046410251500.jpg') no-repeat;
+ }
+
+ main > div > div.row:first-child > div.column:last-child
+ {  
+    background: url('images/פזקר_-291_354410564000.jpg') no-repeat;
+ }
+
+/* second row */
+  main > div > div.row:last-child
+ {
+   margin-top: 10px;
  }
