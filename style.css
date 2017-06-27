@@ -187,3 +187,9 @@ footer >  nav > ul > li a{
  {
    margin-top: 10px;
  }
+  main > div > div.row:last-child > div.column
+ {
+    width: 291px;
+    height: 216px;  
+   border-radius:0px 15px 0px 0px ;
+ }
