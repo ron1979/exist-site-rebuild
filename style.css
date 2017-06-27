@@ -129,3 +129,35 @@ footer > nav > ul > li::after{
 footer >  nav > ul > li a{
   padding-left: 2px;
 }
+
+/*main content */
+   /*<main>
+            <div>
+                <div class="row">
+                    <div class="column">שורה 1 עמודה 1</div>
+                    <div class="column">שורה 1 עמודה 2</div>
+                    <div class="column">שורה 1 עמודה 3</div>                    
+                </div>
+                <div class="row" */
+ main{
+   text-align: center;
+ }
+ main > div 
+ {
+    display: inline-block;
+   /* margin: auto;
+    max-width: 650px;*/
+ }
+
+ main > div > div.row
+ {
+ 
+ }
+
+ main > div > div.row > div.column
+ {
+    float: right;
+    width: 250px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+ }
