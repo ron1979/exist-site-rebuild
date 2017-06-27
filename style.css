@@ -31,4 +31,43 @@ body
   clear:both;
   display: table;
 }
+
+div{
+    border: 1px solid black;
+}
 /* ---------------------------------------------- */
+
+header{    
+    background: url('images/header_bg.png') repeat-x;    
+    position: relative;
+    height: 250px;    
+}
+
+header > .search-bar{
+border-color:red;
+position: absolute;
+left: 30px;
+top: 10px;
+}
+
+header > .search-bar form{
+  display: inline-block;
+}
+
+header > .logo{
+ /* position: absolute;
+  top:30px;
+  right: 10%;   not finished*/
+  float: right;
+}
+
+/*navgation*/
+header > nav ul
+{
+  text-align: center;
+}
+header > nav ul li{
+    display: inline-block;
+   height: 20px; 
+   margin-top: 80px;  
+}
