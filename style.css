@@ -42,7 +42,7 @@ ul>li>a {
 body {
     direction: rtl;
     text-align: right;
-    font-family: arial;
+    font-family: 'Arial (Hebrew)', Arial;
     margin-bottom: 26px;
 }
 
@@ -128,7 +128,7 @@ header>.group>nav>ul>li a {
 /*navgation*/
 
 footer {
-    background-color: black;
+    background: url('images/footer_bg.png') repeat-x;
     text-align: center;
     position: fixed;
     bottom: 0;
@@ -148,19 +148,35 @@ footer>nav>ul>li {
     height: 20px;
     color: white;
     cursor: pointer;
+    font-size: 14px;
 }
 
 footer>nav>ul>li>a:hover {
-    color: blue;
+    color: #005ca0;
+    text-decoration: underline;
 }
 
 footer>nav>ul>li::after {
     content: "|";
-    color: silver;
+}
+
+footer>nav>ul>li:last-child::after {
+    content: "";
 }
 
 footer>nav>ul>li a {
-    padding-left: 2px;
+    padding-left: 7px;
+    padding-right: 3px;
+}
+
+footer>nav>ul>li a.fb {
+    background: url(images/fb_icon.png) no-repeat;
+    width: 19px;
+    display: inline-block;
+    height: 18px;
+    /* margin-top: 0px; */
+    /* padding-top: 10px; */
+    transform: translate(0px, 3px);
 }
 
 
@@ -205,20 +221,29 @@ main>div>div.row:first-child>div.column {
 
 main>div>div.row:first-child>div.column>article {
     color: white;
-    width: 260px;
-    height: 150px;
-    background: url('images/hp_tab_text_bg.png') no-repeat;
+    width: 250px;
+    height: 105px;
+    background: url(images/hp_tab_text_bg.png) no-repeat;
     font-size: 12px;
     position: absolute;
     bottom: 0;
+    padding: 5px 15px 0px 0px;
+    right: 3px;
 }
 
 main>div>div.row:first-child>div.column>article>h1 {
     font-size: 14px;
+    text-align: right;
+}
+
+main>div>div.row:first-child>div.column>article>p {
+    padding-top: 3px;
 }
 
 main>div>div.row:first-child>div.column>article>a {
     color: inherit;
+    display: block;
+    text-align: left;
 }
 
 main>div>div.row:first-child>div.column:first-child {
