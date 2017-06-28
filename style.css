@@ -101,7 +101,7 @@ header .search-bar form>input[type='text'] {
     float: right;
     height: 19px;
     border: none;
-    text-indent: 3px;
+    text-indent: 5px;
 }
 
 header .search-bar form>button[type='submit'] {
@@ -298,13 +298,37 @@ main>div>div.row:first-child>div.column>article>h1 {
 
 main>div>div.row:first-child>div.column>article>p {
     padding-top: 3px;
+    height: 57px;
+    width: 212px;
+    text-align: right;
 }
 
-main>div>div.row:first-child>div.column>article>a {
-    color: inherit;
+main>div>div.row:first-child>div.column>article>a {   
     display: block;
-    text-align: left;
+    width: 67px;   
+    float: left;
+    margin-left: 9px;
 }
+
+div.read-more>div.column>article>a,
+article.read-more >a,
+a.read-more {
+    text-decoration: underline;
+    background: url(images/read_more_white.png) no-repeat;
+    /* background-position: left bottom; */    
+    background-position-y: 4px;
+    color: white;
+    font-size: 13px;
+}
+
+div.read-more>div.column>article>a:hover,
+article.read-more >a:hover,
+a.read-more:hover {
+    background: url(images/read_more_blue.png) no-repeat;
+    background-position-y: 4px;
+    color: #005ca0;
+}
+
 
 main>div>div.row:first-child>div.column:first-child {
     background: url('images/1908364606615453350.JPG') no-repeat;
