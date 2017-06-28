@@ -43,7 +43,7 @@ body {
     direction: rtl;
     text-align: right;
     font-family: 'Arial (Hebrew)', Arial;
-    margin-bottom: 26px;
+    margin-bottom: 52px;
 }
 
 
@@ -266,7 +266,54 @@ main>div>div.row:last-child {
 }
 
 main>div>div.row:last-child>div.column {
-    width: 291px;
+    width: 293px;
     height: 216px;
     border-radius: 0px 15px 0px 0px;
+}
+
+main>div>div.row:last-child>div.column>aside {
+    background: url(images/small_cube_bg.png) no-repeat;
+    height: 100%;
+}
+
+main>div>div.row:last-child>div.column>aside>h1 {
+    color: #575757;
+    font-size: 14px;
+    text-align: right;
+    text-indent: 18px;
+    padding-top: 9px;
+}
+
+main>div>div.row:last-child>div.column>aside>img {
+    height: 111px;
+    width: 251px;
+    margin-top: 23px;
+}
+
+main>div>div.row:last-child>div.column:first-child>aside>img {
+    background: url('images/paz_250x110059890678.jpg') no-repeat;
+}
+
+main>div>div.row:last-child>div.column:nth-child(2)>aside>img {
+    background: url('images/paz_250x110103131473.jpg') no-repeat;
+}
+
+main>div>div.row:last-child>div.column:nth-child(3)>aside>div {
+    padding-top: 12px;
+    padding-right: 20px;
+}
+
+main>div>div.row:last-child>div.column:nth-child(3)>aside>div>ul {
+    width: 74px;
+    float: right;
+    height: 81px;
+    background-color: rebeccapurple;
+}
+
+main>div>div.row:last-child>div.column:nth-child(3)>aside>div>img {
+    width: 82px;
+    height: 167px;
+    float: left;
+    margin-left: 18px;
+    background: url('images/Untitled-3058756287.jpg') no-repeat;
 }
