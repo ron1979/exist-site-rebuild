@@ -274,6 +274,7 @@ main>div>div.row:last-child>div.column {
 main>div>div.row:last-child>div.column>aside {
     background: url(images/small_cube_bg.png) no-repeat;
     height: 100%;
+    position: relative;
 }
 
 main>div>div.row:last-child>div.column>aside>h1 {
@@ -288,6 +289,13 @@ main>div>div.row:last-child>div.column>aside>img {
     height: 111px;
     width: 251px;
     margin-top: 23px;
+}
+
+main>div>div.row:last-child>div.column>aside>a {
+    width: 119px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
 }
 
 main>div>div.row:last-child>div.column:first-child>aside>img {
@@ -315,10 +323,10 @@ main>div>div.row:last-child>div.column:nth-child(3)>aside>div>ul {
 
 main>div>div.row:last-child>div.column:nth-child(3)>aside>div>ul>li {
     height: 24px;
-    font-size: 13px;
 }
 
-main>div>div.row:last-child>div.column:nth-child(3)>aside>div>ul>li>a {
+ul.details>li>a,
+a.details {
     text-decoration: underline;
     background: url(images/read_more_yellow.png) no-repeat;
     /* background-position: left bottom; */
@@ -326,12 +334,18 @@ main>div>div.row:last-child>div.column:nth-child(3)>aside>div>ul>li>a {
     display: inline-block;
     background-position-y: 4px;
     color: #72716d;
+    font-size: 13px;
 }
 
-main>div>div.row:last-child>div.column:nth-child(3)>aside>div>ul>li>a:hover {
+ul.details>li>a:hover,
+a.details:hover {
     background: url(images/read_more_blue.png) no-repeat;
     background-position-y: 4px;
     color: #005ca0;
+}
+
+main>div>div.row:last-child>div.column:nth-child(3)>aside>div>ul>li>a {
+    width: 55px;
 }
 
 main>div>div.row:last-child>div.column:nth-child(3)>aside>div>img {
