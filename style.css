@@ -55,9 +55,11 @@ body {
     display: table;
 }
 
+
+/*
 div {
     border: 1px solid black;
-}
+}*/
 
 
 /* ---------------------------------------------- */
@@ -74,13 +76,32 @@ header>.group {
 }
 
 header .search-bar {
-    border-color: red;
     float: left;
     clear: right;
+    margin-top: 17px;
+}
+
+header .search-bar a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 12px;
 }
 
 header .search-bar form {
     display: inline-block;
+    padding-right: 10px;
+}
+
+header .search-bar form>input[type='text'] {
+    border-radius: 0px 10px 0px 0px;
+}
+
+header .search-bar form>button[type='submit'] {
+    background: url(images/search_button.png) no-repeat;
+    height: 18px;
+    width: 19px;
+    border: none;
 }
 
 header .logo {
@@ -101,7 +122,7 @@ header>.group>nav {
 }
 
 header>.group>nav>ul {
-    margin-top: 45px;
+    margin-top: 25px;
     height: 33px;
 }
 
