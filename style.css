@@ -124,8 +124,21 @@ header>.group>nav>ul>li a {
     padding-left: 7px;
 }
 
+header>.group>nav>ul>li>a.home {
+    display: inline-block;
+    width: 16px;
+    height: 20px;
+    background: url('images/menu_home.png') no-repeat;
+    background-position-x: -17px;
+    background-position-y: 3px;
+}
 
-/*navgation*/
+header>.group>nav>ul>li>a.home:hover {
+    background-position-x: 0px;
+}
+
+
+/*---------------------------*/
 
 footer {
     background: url('images/footer_bg.png') repeat-x;
