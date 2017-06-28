@@ -167,7 +167,27 @@ footer >  nav > ul > li a{
  {
     width: 291px;
     height: 354px;  
-   border-radius:0px 0px 15px 0px ;
+   border-radius:0px 0px 15px 0px;   
+   position: relative;
+ }
+ main > div > div.row:first-child > div.column > article
+ {
+    color: white;
+    width: 260px;
+    height: 150px;
+    background: url('images/hp_tab_text_bg.png') no-repeat;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+ }
+ main > div > div.row:first-child > div.column > article > h1
+ {
+   font-size: 14px;
+ }
+
+ main > div > div.row:first-child > div.column > article > a
+ {
+    color:inherit;
  }
  main > div > div.row:first-child > div.column:first-child 
  {  
