@@ -307,7 +307,31 @@ main>div>div.row:last-child>div.column:nth-child(3)>aside>div>ul {
     width: 74px;
     float: right;
     height: 81px;
-    background-color: rebeccapurple;
+    margin-top: 10px;
+}
+
+
+/* third colomn in second row with the map image */
+
+main>div>div.row:last-child>div.column:nth-child(3)>aside>div>ul>li {
+    height: 24px;
+    font-size: 13px;
+}
+
+main>div>div.row:last-child>div.column:nth-child(3)>aside>div>ul>li>a {
+    text-decoration: underline;
+    background: url(images/read_more_yellow.png) no-repeat;
+    /* background-position: left bottom; */
+    width: 55px;
+    display: inline-block;
+    background-position-y: 4px;
+    color: #72716d;
+}
+
+main>div>div.row:last-child>div.column:nth-child(3)>aside>div>ul>li>a:hover {
+    background: url(images/read_more_blue.png) no-repeat;
+    background-position-y: 4px;
+    color: #005ca0;
 }
 
 main>div>div.row:last-child>div.column:nth-child(3)>aside>div>img {
