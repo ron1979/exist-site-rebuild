@@ -1,138 +1,173 @@
-
 /* CSS Reset*/
-body,ul,h1,li{ margin:0; padding:0}
+
+body,
+ul,
+h1,
+li,
+P {
+    margin: 0;
+    padding: 0
+}
 
 html {
- box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-*, *:before, *:after {
- box-sizing: inherit;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
-ol, ul {
- list-style: none;
+ol,
+ul {
+    list-style: none;
 }
 
-img{ border:none;}
+img {
+    border: none;
+}
 
-ul > li > a{ color: inherit; text-decoration: none;}
+ul>li>a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
 /* ---------------------------------------------- */
 
+
 /* Generl element and classes */
-body
-{
+
+body {
     direction: rtl;
     text-align: right;
     font-family: arial;
     margin-bottom: 26px;
 }
 
+
 /*clearfix*/
-.row::after{
-  content:"";
-  clear:both;
-  display: table;
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
-div{
+div {
     border: 1px solid black;
 }
+
+
 /* ---------------------------------------------- */
 
-header{    
-    background: url('images/header_bg.png') repeat-x;       
-    height: 125px;    
-    width: 100%;     
-    text-align: center; 
+header {
+    background: url('images/header_bg.png') repeat-x;
+    height: 125px;
+    width: 100%;
+    text-align: center;
 }
 
-header > .group{ 
-   display: inline-block; 
+header>.group {
+    display: inline-block;
 }
 
-header .search-bar{
-   border-color:red;
+header .search-bar {
+    border-color: red;
     float: left;
     clear: right;
 }
 
-header .search-bar form{
-  display: inline-block;
+header .search-bar form {
+    display: inline-block;
 }
 
-header .logo{
- /* position: absolute;
+header .logo {
+    /* position: absolute;
   top:30px;
   right: 10%;   not finished*/
-  float: right;
-  margin-top: 25px;
-}
-
-/*navgation*/
-header > .group > nav
-{  
-  float: left;
-  clear: left;
-  max-width:650px;
-}
-header > .group > nav > ul
-{
-  margin-top: 60px;
-}
-header > .group > nav > ul > li{
-    display: inline-block;
-   height: 20px; 
-   color:white;
-   cursor: pointer;     
-}
-header > .group > nav > ul > li > a:hover{ color: blue;}
-
-header > .group > nav > ul > li::after{ 
-    content: "|";
-    color: silver;
-  }
-
-header > .group > nav > ul > li a{
-  padding-left: 7px;
+    float: right;
+    margin-top: 25px;
 }
 
 
 /*navgation*/
-footer{
-  background-color: black;
-  text-align:center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-footer > nav
-{    
-  display: inline-block; 
-}
-footer > nav > ul
-{
-  margin-top: 10px;
-}
-footer > nav > ul > li{
-    display: inline-block;
-   height: 20px; 
-   color:white;
-   cursor: pointer;     
-}
-footer > nav > ul > li > a:hover{ color: blue;}
 
-footer > nav > ul > li::after{ 
+header>.group>nav {
+    float: left;
+    clear: left;
+    max-width: 650px;
+}
+
+header>.group>nav>ul {
+    margin-top: 60px;
+}
+
+header>.group>nav>ul>li {
+    display: inline-block;
+    height: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+header>.group>nav>ul>li>a:hover {
+    color: blue;
+}
+
+header>.group>nav>ul>li::after {
     content: "|";
     color: silver;
-  }
-
-footer >  nav > ul > li a{
-  padding-left: 2px;
 }
+
+header>.group>nav>ul>li a {
+    padding-left: 7px;
+}
+
+
+/*navgation*/
+
+footer {
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer>nav {
+    display: inline-block;
+}
+
+footer>nav>ul {
+    margin-top: 10px;
+}
+
+footer>nav>ul>li {
+    display: inline-block;
+    height: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+footer>nav>ul>li>a:hover {
+    color: blue;
+}
+
+footer>nav>ul>li::after {
+    content: "|";
+    color: silver;
+}
+
+footer>nav>ul>li a {
+    padding-left: 2px;
+}
+
 
 /*main content */
-   /*<main>
+
+
+/*<main>
             <div>
                 <div class="row">
                     <div class="column">שורה 1 עמודה 1</div>
@@ -141,37 +176,34 @@ footer >  nav > ul > li a{
                 </div>
                 <div class="row" */
 
-                
- main{
-   text-align: center;
- }
- main > div 
- {
+main {
+    text-align: center;
+}
+
+main>div {
     display: inline-block;
-   /* margin: auto;
+    /* margin: auto;
     max-width: 650px;*/
- }
+}
 
-
-
- main > div > div.row > div.column
- {
+main>div>div.row>div.column {
     float: right;
     width: 250px;
     margin-right: 10px;
     margin-bottom: 10px;
- }
+}
+
 
 /* first row  */
- main > div > div.row:first-child > div.column
- {
+
+main>div>div.row:first-child>div.column {
     width: 291px;
-    height: 354px;  
-   border-radius:0px 0px 15px 0px;   
-   position: relative;
- }
- main > div > div.row:first-child > div.column > article
- {
+    height: 354px;
+    border-radius: 0px 0px 15px 0px;
+    position: relative;
+}
+
+main>div>div.row:first-child>div.column>article {
     color: white;
     width: 260px;
     height: 150px;
@@ -179,38 +211,37 @@ footer >  nav > ul > li a{
     font-size: 12px;
     position: absolute;
     bottom: 0;
- }
- main > div > div.row:first-child > div.column > article > h1
- {
-   font-size: 14px;
- }
+}
 
- main > div > div.row:first-child > div.column > article > a
- {
-    color:inherit;
- }
- main > div > div.row:first-child > div.column:first-child 
- {  
+main>div>div.row:first-child>div.column>article>h1 {
+    font-size: 14px;
+}
+
+main>div>div.row:first-child>div.column>article>a {
+    color: inherit;
+}
+
+main>div>div.row:first-child>div.column:first-child {
     background: url('images/1908364606615453350.JPG') no-repeat;
- }
- main > div > div.row:first-child > div.column:nth-child(2)
- {  
-    background: url('images/Picture-046410251500.jpg') no-repeat;
- }
+}
 
- main > div > div.row:first-child > div.column:last-child
- {  
+main>div>div.row:first-child>div.column:nth-child(2) {
+    background: url('images/Picture-046410251500.jpg') no-repeat;
+}
+
+main>div>div.row:first-child>div.column:last-child {
     background: url('images/פזקר_-291_354410564000.jpg') no-repeat;
- }
+}
+
 
 /* second row */
-  main > div > div.row:last-child
- {
-   margin-top: 10px;
- }
-  main > div > div.row:last-child > div.column
- {
+
+main>div>div.row:last-child {
+    margin-top: 10px;
+}
+
+main>div>div.row:last-child>div.column {
     width: 291px;
-    height: 216px;  
-   border-radius:0px 15px 0px 0px ;
- }
+    height: 216px;
+    border-radius: 0px 15px 0px 0px;
+}
