@@ -86,6 +86,9 @@ header .search-bar a {
     text-decoration: none;
     text-transform: capitalize;
     font-size: 12px;
+    float: right;
+    margin-top: 3px;
+    margin-left: 6px;
 }
 
 header .search-bar form {
@@ -95,13 +98,20 @@ header .search-bar form {
 
 header .search-bar form>input[type='text'] {
     border-radius: 0px 10px 0px 0px;
+    float: right;
+    height: 19px;
+    border: none;
+    text-indent: 3px;
 }
 
 header .search-bar form>button[type='submit'] {
     background: url(images/search_button.png) no-repeat;
-    height: 18px;
+    height: 19px;
     width: 19px;
     border: none;
+    float: right;
+    margin-right: 1px;
+    cursor: pointer;
 }
 
 header .logo {
