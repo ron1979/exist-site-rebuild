@@ -141,6 +141,8 @@ header>.group>nav>ul>li {
     height: 20px;
     color: white;
     cursor: pointer;
+    position: relative; /* influence sub menu */
+    z-index: 500;
 }
 
 header>.group>nav>ul>li>a:hover {
@@ -156,14 +158,14 @@ header>.group>nav>ul>li:last-child::after {
     content: "";
 }
 
-header>.group>nav>ul>li a {
+header>.group>nav>ul>li > a {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 15px;
     font-weight: bold;
 }
 
-header>.group>nav>ul>li a:hover {
+header>.group>nav>ul>li > a:hover {
     color: #005ca0;
     text-decoration: underline;
 }
@@ -184,8 +186,31 @@ header>.group>nav>ul>li>a.home:hover {
     background-position-x: 0px;
 }
 
+/*sub menu*/
+header>.group>nav>ul>li > ul{
+   display:  none;
+  position: absolute;
+  background: url('images/menu_dropdown_bg.png');
+  z-index: 500;
+  top:20px;
+  right:10px;
+  text-align: right;
+}
+header>.group>nav>ul>li:hover > ul{
+  display:  block;  
+}
+header>.group>nav>ul>li > ul > li{
+    padding: 5px 0px;   
+}
+header>.group>nav>ul>li > ul > li > a{
+  display: inline-block;
+  white-space: nowrap;
+}
+
+
 
 /*---------------------------*/
+
 
 footer {
     background: url('images/footer_bg.png') repeat-x;
